@@ -1,0 +1,39 @@
+{
+    "name": "recorded-people-fifty-token-budgets",
+    "description": "Sanitized recording: recorded-people-fifty-token-budgets, captured 2026-09-22. Headers omitted; arrays trimmed to 2 items and strings to 500 characters. Real request IDs replaced with synthetic values; precise recording time omitted. Original live result count: 50. Profile text, URLs and dates are synthetic, not real people.",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "{{request.url}}",
+                "body": {
+                    "query": "computer science researchers",
+                    "search_type": "people",
+                    "max_results": 50,
+                    "max_tokens": 5000,
+                    "max_tokens_per_page": 1000
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "id": "synthetic-recorded-people-fifty-token-budgets",
+                    "results": [
+                        {
+                            "last_updated": "2000-01-01",
+                            "snippet": "Synthetic profile for connector response-shape testing.",
+                            "title": "Synthetic researcher 1",
+                            "url": "https://example.com/people/researcher-1"
+                        },
+                        {
+                            "last_updated": "2000-01-01",
+                            "snippet": "Synthetic profile for connector response-shape testing.",
+                            "title": "Synthetic researcher 2",
+                            "url": "https://example.com/people/researcher-2"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

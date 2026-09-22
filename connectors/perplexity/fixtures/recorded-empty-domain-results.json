@@ -1,0 +1,27 @@
+{
+    "name": "recorded-empty-domain-results",
+    "description": "Sanitized recording: recorded-empty-domain-results, captured 2026-09-22. Headers omitted; arrays trimmed to 2 items and strings to 500 characters. Real request IDs replaced with synthetic values; precise recording time omitted. Original live result count: 0. Email/phone scrub applied.",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "{{request.url}}",
+                "body": {
+                    "query": "Deno documentation",
+                    "max_results": 2,
+                    "search_context_size": "low",
+                    "search_domain_filter": [
+                        "monid-validation-nonexistent.invalid"
+                    ]
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "id": "synthetic-recorded-empty-domain-results",
+                    "results": []
+                }
+            }
+        }
+    ]
+}

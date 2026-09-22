@@ -1,0 +1,28 @@
+{
+    "name": "recorded-people-50",
+    "description": "Sanitized recording: recorded-people-50, captured 2026-09-22. Headers omitted; arrays trimmed to 2 items and strings to 500 characters. Real request IDs replaced with synthetic values; precise recording time omitted. Original live result count: not applicable. Email/phone scrub applied.",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "{{request.url}}",
+                "body": {
+                    "query": "computer science researchers",
+                    "search_type": "people",
+                    "max_results": 50,
+                    "search_context_size": "low"
+                }
+            },
+            "res": {
+                "status": 400,
+                "body": {
+                    "error": {
+                        "message": "Invalid request (request id: synthetic-recorded-people-50)",
+                        "type": "invalid_request",
+                        "code": 400
+                    }
+                }
+            }
+        }
+    ]
+}

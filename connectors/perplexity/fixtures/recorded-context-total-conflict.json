@@ -1,0 +1,27 @@
+{
+    "name": "recorded-context-total-conflict",
+    "description": "Sanitized recording: recorded-context-total-conflict, captured 2026-09-22. Headers omitted; arrays trimmed to 2 items and strings to 500 characters. Real request IDs replaced with synthetic values; precise recording time omitted. Original live result count: not applicable. Email/phone scrub applied.",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "{{request.url}}",
+                "body": {
+                    "query": "Deno documentation",
+                    "search_context_size": "high",
+                    "max_tokens": 5000
+                }
+            },
+            "res": {
+                "status": 400,
+                "body": {
+                    "error": {
+                        "message": "search_context_size cannot be combined with explicit max_tokens or max_tokens_per_page",
+                        "type": "invalid_request",
+                        "code": 400
+                    }
+                }
+            }
+        }
+    ]
+}
