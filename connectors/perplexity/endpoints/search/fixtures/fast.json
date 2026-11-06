@@ -1,0 +1,40 @@
+{
+    "name": "fast",
+    "description": "recorded chain for perplexity#search, scenario 'fast': search_type fast (live 2026-11-06; trimmed)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/search",
+                "body": {
+                    "query": "deno 2 workspace monorepo guide",
+                    "max_results": 2,
+                    "search_type": "fast",
+                    "max_tokens_per_page": 256
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "id": "c6705f9c-7c96-4d71-bb60-c1aced969399",
+                    "results": [
+                        {
+                            "date": "2026-06-11",
+                            "last_updated": "2026-10-05",
+                            "snippet": "Configure a monorepo with workspaces | Deno Docs\n...\n# Configure a monorepo with workspaces\nA workspace is a collection of folders, each with its own `deno.json` or\n`package.json`, managed from a single root.\nMembers can import each other by\nname, share dependencies, and run tools like `deno test` and `deno fmt` across\nthe whole repository at once.\n...\nThe root `deno.json` lists the member directories:\n...\nEach member gets its own `deno.json` with a `name`, a `version`, and an\n`exports` field po",
+                            "title": "Configure a monorepo with workspaces - Deno Docs",
+                            "url": "https://docs.deno.com/examples/workspaces_monorepo_tutorial/"
+                        },
+                        {
+                            "date": "2026-06-29",
+                            "last_updated": "2026-10-05",
+                            "snippet": "Deno supports workspaces, also known as \"monorepos\", which allow you to manage\nmultiple related and interdependent packages simultaneously.\nA \"workspace\" is a collection of folders containing\n`deno.json` or `package.json`\nconfiguration files.\nThe root `deno.json` file defines the workspace:\n...\n1. This monorepo consists of two packages, placed in `./add` and `./subtract`\n...\n2. By using `name` and `version` options in members' `deno.json` files, it's\npossible to refer to them using \"bare specifi",
+                            "title": "Workspaces and monorepos",
+                            "url": "https://docs.deno.com/runtime/fundamentals/workspaces/"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

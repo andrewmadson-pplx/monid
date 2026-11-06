@@ -1,0 +1,26 @@
+{
+    "name": "provider-error",
+    "description": "recorded chain for perplexity#search, scenario 'provider-error': invalid API key, vendor 401 {error: {message, type, code}} is data (live 2026-11-06)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/search",
+                "body": {
+                    "query": "anything",
+                    "search_type": "web"
+                }
+            },
+            "res": {
+                "status": 401,
+                "body": {
+                    "error": {
+                        "message": "Invalid API key provided. Ensure your API key is correct and active.",
+                        "type": "invalid_api_key",
+                        "code": 401
+                    }
+                }
+            }
+        }
+    ]
+}
