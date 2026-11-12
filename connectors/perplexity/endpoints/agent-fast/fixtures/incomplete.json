@@ -1,0 +1,136 @@
+{
+    "name": "incomplete",
+    "description": "recorded chain for perplexity#agent/fast, scenario 'incomplete' (live 2026-11-12; trimmed)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/agent",
+                "body": {
+                    "input": "Summarize the latest Deno release notes.",
+                    "max_output_tokens": 16,
+                    "preset": "fast"
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "background": false,
+                    "completed_at": null,
+                    "created_at": 1794518779,
+                    "effort": "fast@2026-11-11.0",
+                    "error": null,
+                    "frequency_penalty": 0,
+                    "id": "resp_b7fb2e56-1e24-4fac-9ec6-4354f8f721f2",
+                    "incomplete_details": {
+                        "reason": "max_output_tokens"
+                    },
+                    "instructions": null,
+                    "max_output_tokens": 16,
+                    "max_tool_calls": null,
+                    "metadata": {},
+                    "model": "openai/gpt-6-luna",
+                    "object": "response",
+                    "output": [
+                        {
+                            "queries": [
+                                "Summarize the latest Deno release notes."
+                            ],
+                            "results": [
+                                {
+                                    "date": "2026-10-21",
+                                    "id": 1,
+                                    "last_updated": "2026-11-12",
+                                    "snippet": "## v2.9.8\nv2.9.8 Latest\n## Sorry, something went wrong.\ngithub-actions released this\n21 Oct 15:28\nImmutable release.\nOnly release title and notes can be modified.\nv2.9.8\n`fe7ed01`\nGPG key ID: B5690EEEBB952194\n...\n### 2.9.8 / 2026.10.21\n- fix(compile): check read permission for dynamically imported local files\n(#36925)\n- fix(completions): complete script paths for bare deno run in zsh (#36976)\n- fix(core): keep op contexts alive until the isolate is disposed (#37026)\n- fix(coverage): skip the V8 ",
+                                    "source": "web",
+                                    "title": "Releases · denoland/deno · GitHub",
+                                    "url": "https://github.com/denoland/deno/releases"
+                                },
+                                {
+                                    "date": "2026-10-21",
+                                    "id": 2,
+                                    "last_updated": "2026-11-10",
+                                    "snippet": "Deno Release Notes & Changelog · November 2026 — Release Notes Index\n...\nAnnounced that the entire Deno team is joining Cloudflare, alongside desktop clipboard support and wider Node compatibility.\n**The Deno team is joining Cloudflare.** The announcement covers the runtime, the toolchain, and Node.js compatibility work; the team moves to Cloudflare to carry it forward.\n**Desktop apps gained clipboard and richer menus.** A clipboard API and menu items that carry checked, icon, and tooltip state ",
+                                    "source": "web",
+                                    "title": "Deno Release Notes & Changelog · November 2026 — Release ...",
+                                    "url": "https://releases.sh/deno"
+                                }
+                            ],
+                            "type": "search_results"
+                        },
+                        {
+                            "content": [
+                                {
+                                    "annotations": [],
+                                    "text": "The latest release is **Deno v2.9.8",
+                                    "type": "output_text"
+                                }
+                            ],
+                            "id": "msg_6c9b7f5f-db5f-4fe6-8869-87615d25e3d9",
+                            "role": "assistant",
+                            "status": "completed",
+                            "type": "message"
+                        }
+                    ],
+                    "parallel_tool_calls": true,
+                    "presence_penalty": 0,
+                    "preset": "fast@2026-11-11.0",
+                    "previous_response_id": null,
+                    "prompt_cache_key": null,
+                    "reasoning": null,
+                    "safety_identifier": null,
+                    "service_tier": "fast",
+                    "status": "incomplete",
+                    "store": true,
+                    "temperature": 1,
+                    "text": {
+                        "format": {
+                            "type": "text"
+                        }
+                    },
+                    "tool_choice": "auto",
+                    "tools": [
+                        {
+                            "type": "web_search"
+                        }
+                    ],
+                    "top_logprobs": 0,
+                    "top_p": 1,
+                    "truncation": "",
+                    "usage": {
+                        "cost": {
+                            "cache_creation_cost": 0.00056,
+                            "cache_read_cost": 0.00002,
+                            "currency": "USD",
+                            "input_cost": 0,
+                            "output_cost": 0.00001,
+                            "tool_calls_cost": 0.001,
+                            "tool_calls_cost_details": {
+                                "search_web": 0.001
+                            },
+                            "total_cost": 0.00159
+                        },
+                        "input_tokens": 6244,
+                        "input_tokens_details": {
+                            "cache_creation_input_tokens": 4461,
+                            "cache_read_input_tokens": 1780,
+                            "cached_tokens": 1780
+                        },
+                        "output_tokens": 16,
+                        "output_tokens_details": {
+                            "reasoning_tokens": 0
+                        },
+                        "tool_calls_details": {
+                            "search_web": {
+                                "cost_usd": 0.001,
+                                "invocation": 1
+                            }
+                        },
+                        "total_tokens": 6260
+                    },
+                    "user": null
+                }
+            }
+        }
+    ]
+}
