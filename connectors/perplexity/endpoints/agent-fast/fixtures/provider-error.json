@@ -1,0 +1,26 @@
+{
+    "name": "provider-error",
+    "description": "recorded chain for perplexity#agent/fast, scenario 'provider-error' (live 2026-11-12; trimmed)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/agent",
+                "body": {
+                    "input": "anything",
+                    "preset": "fast"
+                }
+            },
+            "res": {
+                "status": 401,
+                "body": {
+                    "error": {
+                        "message": "Invalid API key provided. Ensure your API key is correct and active.",
+                        "type": "invalid_api_key",
+                        "code": 401
+                    }
+                }
+            }
+        }
+    ]
+}

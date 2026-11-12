@@ -1,0 +1,133 @@
+{
+    "name": "happy",
+    "description": "recorded chain for perplexity#agent/fast, scenario 'happy' (live 2026-11-12; trimmed)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/agent",
+                "body": {
+                    "input": "Who maintains the Deno runtime? Answer in one sentence.",
+                    "preset": "fast"
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "background": false,
+                    "completed_at": 1794518771,
+                    "created_at": 1794518771,
+                    "effort": "fast@2026-11-11.0",
+                    "error": null,
+                    "frequency_penalty": 0,
+                    "id": "resp_4b2d18dd-d216-48b6-aa5c-8ec23ff0646d",
+                    "incomplete_details": null,
+                    "instructions": null,
+                    "max_output_tokens": null,
+                    "max_tool_calls": null,
+                    "metadata": {},
+                    "model": "openai/gpt-6-luna",
+                    "object": "response",
+                    "output": [
+                        {
+                            "queries": [
+                                "Who maintains the Deno runtime? Answer in one sentence."
+                            ],
+                            "results": [
+                                {
+                                    "date": "2026-10-30",
+                                    "id": 1,
+                                    "last_updated": "2026-11-12",
+                                    "snippet": "# Deno joins Cloudflare and the risk of a JavaScript monoculture\nOn 9 October, Ryan Dahl announced that the entire Deno team is joining Cloudflare.\nThe weightiest part of the announcement isn’t the deal itself but what comes after: **in a year they’ll stop developing the Deno runtime**.\n...\n## What we’re left with\n|Runtime|Who controls it|Engine|From which browser|\n|--|--|--|--|\n|Node.js|OpenJS Foundation|V8|Chrome|\n|Bun|Anthropic|JavaScriptCore|Safari|\n|workerd|Cloudflare|V8|Chrome|\n|Deno|Cloud",
+                                    "source": "web",
+                                    "title": "Deno joins Cloudflare and the risk of a JavaScript monoculture",
+                                    "url": "https://antoniocortes.com/en/deno-cloudflare-monocultivo-javascript/"
+                                },
+                                {
+                                    "date": "2026-10-15",
+                                    "id": 2,
+                                    "last_updated": "2026-11-11",
+                                    "snippet": "# The state of Deno after the Cloudflare announcement #37030\n## The state of Deno after the Cloudflare announcement\nLast week we announced that the Deno company is joining Cloudflare (Deno blog post, Cloudflare blog post).\nThis issue explains where the Deno runtime stands right now, and we'll keep it pinned and updated as things change.\n## What's happening\nThe Deno Company (now Cloudflare) will continue maintain Deno until October 2027:\n- **Monthly releases.** We'll publish a 2.9.x LTS release e",
+                                    "source": "web",
+                                    "title": "The state of Deno after the Cloudflare announcement #37030",
+                                    "url": "https://github.com/denoland/deno/issues/37030"
+                                }
+                            ],
+                            "type": "search_results"
+                        },
+                        {
+                            "content": [
+                                {
+                                    "annotations": [],
+                                    "text": "Cloudflare’s Deno team maintains the runtime through October 2027, providing monthly fixes and security updates; after that, community stewardship is unresolved.[2]",
+                                    "type": "output_text"
+                                }
+                            ],
+                            "id": "msg_953b0f55-94bf-493f-96e0-cd97da6d11a9",
+                            "role": "assistant",
+                            "status": "completed",
+                            "type": "message"
+                        }
+                    ],
+                    "parallel_tool_calls": true,
+                    "presence_penalty": 0,
+                    "preset": "fast@2026-11-11.0",
+                    "previous_response_id": null,
+                    "prompt_cache_key": null,
+                    "reasoning": null,
+                    "safety_identifier": null,
+                    "service_tier": "fast",
+                    "status": "completed",
+                    "store": true,
+                    "temperature": 1,
+                    "text": {
+                        "format": {
+                            "type": "text"
+                        }
+                    },
+                    "tool_choice": "auto",
+                    "tools": [
+                        {
+                            "type": "web_search"
+                        }
+                    ],
+                    "top_logprobs": 0,
+                    "top_p": 1,
+                    "truncation": "",
+                    "usage": {
+                        "cost": {
+                            "cache_creation_cost": 0.00044,
+                            "cache_read_cost": 0.00002,
+                            "currency": "USD",
+                            "input_cost": 0,
+                            "output_cost": 0.00002,
+                            "tool_calls_cost": 0.001,
+                            "tool_calls_cost_details": {
+                                "search_web": 0.001
+                            },
+                            "total_cost": 0.00148
+                        },
+                        "input_tokens": 5300,
+                        "input_tokens_details": {
+                            "cache_creation_input_tokens": 3517,
+                            "cache_read_input_tokens": 1780,
+                            "cached_tokens": 1780
+                        },
+                        "output_tokens": 36,
+                        "output_tokens_details": {
+                            "reasoning_tokens": 0
+                        },
+                        "tool_calls_details": {
+                            "search_web": {
+                                "cost_usd": 0.001,
+                                "invocation": 1
+                            }
+                        },
+                        "total_tokens": 5336
+                    },
+                    "user": null
+                }
+            }
+        }
+    ]
+}
