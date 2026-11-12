@@ -1,0 +1,28 @@
+{
+    "name": "empty",
+    "description": "recorded chain for perplexity#search, scenario 'empty': a 200 with results [] (live 2026-11-06)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/search",
+                "body": {
+                    "query": "zzqxv qqzzv xxqvz no such page 8f3k2",
+                    "max_results": 2,
+                    "search_domain_filter": [
+                        "example.com"
+                    ],
+                    "search_recency_filter": "hour",
+                    "search_type": "web"
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "id": "6bd1f049-56c8-4c91-95ad-397b43b32931",
+                    "results": []
+                }
+            }
+        }
+    ]
+}
