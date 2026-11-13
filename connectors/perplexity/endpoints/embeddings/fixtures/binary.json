@@ -1,0 +1,43 @@
+{
+    "name": "binary",
+    "description": "recorded chain for perplexity#embeddings, scenario 'binary' (live 2026-11-13)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/embeddings",
+                "body": {
+                    "input": [
+                        "hello world"
+                    ],
+                    "model": "pplx-embed-v1-4b",
+                    "dimensions": 256,
+                    "encoding_format": "base64_binary"
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "data": [
+                        {
+                            "embedding": "zpV8/oIvJ+eVndVhf3owOotu0ONXNNKGU7KKk40kePE=",
+                            "index": 0,
+                            "object": "embedding"
+                        }
+                    ],
+                    "model": "pplx-embed-v1-4b",
+                    "object": "list",
+                    "usage": {
+                        "cost": {
+                            "currency": "USD",
+                            "input_cost": 6e-08,
+                            "total_cost": 6e-08
+                        },
+                        "prompt_tokens": 2,
+                        "total_tokens": 2
+                    }
+                }
+            }
+        }
+    ]
+}

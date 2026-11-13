@@ -18,7 +18,11 @@ Deno.test(`${ID} wire form: bearer auth, one usd pool, no consolidate`, async ()
     const ids = Object.keys(bundle.endpoints).filter((id) =>
         id.startsWith("perplexity#")
     );
-    assertEquals(ids.sort(), ["perplexity#agent/fast", ID]);
+    assertEquals(ids.sort(), [
+        "perplexity#agent/fast",
+        "perplexity#embeddings",
+        ID,
+    ]);
     const doc = bundle.endpoints[ID];
     assertEquals(doc.request.method, "POST");
     assertEquals(doc.request.url, "https://api.perplexity.ai/search");
