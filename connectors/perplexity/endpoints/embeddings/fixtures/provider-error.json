@@ -1,0 +1,28 @@
+{
+    "name": "provider-error",
+    "description": "recorded chain for perplexity#embeddings, scenario 'provider-error' (live 2026-11-13)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/embeddings",
+                "body": {
+                    "input": [
+                        "anything"
+                    ],
+                    "model": "pplx-embed-v1-0.6b"
+                }
+            },
+            "res": {
+                "status": 401,
+                "body": {
+                    "error": {
+                        "message": "Invalid API key provided. Ensure your API key is correct and active.",
+                        "type": "invalid_api_key",
+                        "code": 401
+                    }
+                }
+            }
+        }
+    ]
+}

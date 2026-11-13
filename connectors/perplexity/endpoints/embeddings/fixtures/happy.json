@@ -1,0 +1,48 @@
+{
+    "name": "happy",
+    "description": "recorded chain for perplexity#embeddings, scenario 'happy' (live 2026-11-13)",
+    "calls": [
+        {
+            "req": {
+                "method": "POST",
+                "url": "https://api.perplexity.ai/v1/embeddings",
+                "body": {
+                    "input": [
+                        "hello world",
+                        "Perplexity embeddings"
+                    ],
+                    "model": "pplx-embed-v1-0.6b",
+                    "dimensions": 128
+                }
+            },
+            "res": {
+                "status": 200,
+                "body": {
+                    "data": [
+                        {
+                            "embedding": "ugYA9EvAO0O1ttTo4wD2Auf5Ts5D/BdGD/v9nSsKKu31FQkAOvPJAfLMEecGDC4bwgTtIBAO3e8DLxXbBjSnK/DyD8klEMMxxubeEg4d7ODN2e8B2gLSDTHXQA8G++n22yowxwPbEx/e5dXvHS495i7fUAApEDYo+58DAOMkFzQ=",
+                            "index": 0,
+                            "object": "embedding"
+                        },
+                        {
+                            "embedding": "C+0AOtZKECy90M3KGQD2rsZCr/Xk/DEWre8/yArGB6bFJPQA4zDVBvYg38DpDu/x9hYiCMPBAwUo3ecUAbvl+STL4CpU5esRDtjf6DNISOz+AgLqAskxK0wruPc5EwkA5ATfGBP/CQzG7t7v7fyyNx3WHs3rASPy1RIMJfLv4Cc=",
+                            "index": 1,
+                            "object": "embedding"
+                        }
+                    ],
+                    "model": "pplx-embed-v1-0.6b",
+                    "object": "list",
+                    "usage": {
+                        "cost": {
+                            "currency": "USD",
+                            "input_cost": 2.4e-08,
+                            "total_cost": 2.4e-08
+                        },
+                        "prompt_tokens": 6,
+                        "total_tokens": 6
+                    }
+                }
+            }
+        }
+    ]
+}
